@@ -12,9 +12,8 @@ function App(props) {
   }, [])
 
   return (
-    <div className="App">
-      <h1>Async Redux Project</h1>
-      <h3>Facts go here:</h3>
+    <div className="App" id='wrapper'>
+      <h1>Cat Facts</h1>
       <p>{facts}</p>
     </div>
   );

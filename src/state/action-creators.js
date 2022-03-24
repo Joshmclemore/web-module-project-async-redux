@@ -6,10 +6,8 @@ const URL = 'https://catfact.ninja/fact';
 export const getRandomCatFact = () => dispatch => {
     axios.get(URL)
     .then(res => {
-        debugger
         dispatch({ type: GET_RANDOM_CAT_FACT, payload: res.data.fact})
     })
     .catch(err => {
-        debugger
     })
 }
